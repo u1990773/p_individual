@@ -7,10 +7,21 @@
 button.center{
 	width: 6rem;
 	height: 3rem;
-	margin-top: 1rem;
+	margin-top: 2rem;
+	background-color:bisque;
+	color:dimgray;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	
+}
+button.center:hover{
+	background-color: #ffdab9;;
 }
 
 #title{
-	color:red;
+	color:dimgray;
 	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: beige;
 }

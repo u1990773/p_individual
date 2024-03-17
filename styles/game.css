@@ -1,0 +1,18 @@
+h1{
+    font-size: 2rem;
+    color:dimgray;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: beige;
+}
+#game{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

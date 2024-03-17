@@ -27,14 +27,18 @@ export var game = function(){
     var pairs = options.pairs;
     var difficulty= options.difficulty;
     var temps;
+    var restapunts
     if(options.difficulty=='hard'){
-        temps=1000;
+        temps=500;
+        restapunts=50;
     }
     else if(options.difficulty=='normal'){
-        temps=3000;
+        temps=1000;
+        restapunts=25;
     }
-    else{
+    else if(options.difficulty=='easy'){
         temps=5000;
+        restapunts=10;
     };
     var points = 100;
     return {
@@ -69,7 +73,7 @@ export var game = function(){
                 }
                 else{
                     [card, lastCard].forEach(c=>c.goBack());
-                    points-=25;
+                    points-=restapunts;
                     if (points <= 0){
                         alert ("Has perdut");
                         window.location.replace("../");
